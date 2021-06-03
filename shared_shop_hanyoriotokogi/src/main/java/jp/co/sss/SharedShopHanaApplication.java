@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SharedShopHanyoriotokogiApplication {
+public class SharedShopHanaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SharedShopHanyoriotokogiApplication.class, args);
+		SpringApplication.run(SharedShopHanaApplication.class, args);
 	}
 
 }

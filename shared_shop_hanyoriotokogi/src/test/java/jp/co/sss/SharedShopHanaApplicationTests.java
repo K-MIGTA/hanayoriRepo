@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SharedShopHanyoriotokogiApplicationTests {
+class SharedShopHanaApplicationTests {
 
 	@Test
 	void contextLoads() {
