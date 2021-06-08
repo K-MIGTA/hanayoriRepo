@@ -1,0 +1,17 @@
+CREATE TABLE favarites (
+  id NUMBER(6) PRIMARY KEY,
+  item_id number(6) REFERENCES items(id) not null,
+  user_id NUMBER(6) REFERENCES users(id) NOT NULL,
+  delete_flag NUMBER(1) DEFAULT 0 NOT NULL
+);
+CREATE TABLE questions (
+  id NUMBER(6) PRIMARY KEY,
+  name varchar2(100)
+);
+
+CREATE TABLE inqueries (
+  id NUMBER(6) PRIMARY KEY,
+  contact_category number(2)  REFERENCES questions(id) not null,
+  text varchar2(400) NOT NULL,
+  send_date date DEFAULT SYSDATE NOT NULL
+);
