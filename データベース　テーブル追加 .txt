@@ -1,4 +1,4 @@
-CREATE TABLE favarites (
+CREATE TABLE favorites (
   id NUMBER(6) PRIMARY KEY,
   item_id number(6) REFERENCES items(id) not null,
   user_id NUMBER(6) REFERENCES users(id) NOT NULL,
