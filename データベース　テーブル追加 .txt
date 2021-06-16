@@ -15,3 +15,6 @@ CREATE TABLE inqueries (
   text varchar2(400) NOT NULL,
   send_date date DEFAULT SYSDATE NOT NULL
 );
+
+-- シーケンスの作成(お気に入りテーブル用)
+CREATE SEQUENCE seq_favorite_items NOCACHE;
