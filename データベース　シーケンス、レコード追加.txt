@@ -1,0 +1,16 @@
+-- シーケンスの作成(問い合わせテーブル用)
+CREATE SEQUENCE seq_inqueries NOCACHE;
+
+-- シーケンスの作成(問い合わせ番号テーブル用)
+CREATE SEQUENCE seq_questions NOCACHE;
+
+-- レコード登録(問い合わせ)
+INSERT INTO inqueries VALUES(seq_inqueries.NEXTVAL, '1', 'シェアードショップに登録している会員情報を入力してください(例)電話番号やお名前、メールアドレスをご記入ください', DEFAULT);
+INSERT INTO inqueries VALUES(seq_inqueries.NEXTVAL, '2', 'シェアードショップに登録している会員情報を入力してください(例)電話番号やお名前をご記入ください', DEFAULT);
+
+-- レコード登録(問い合わせ番号)
+INSERT INTO questions VALUES(seq_questions.NEXTVAL, 'パスワードの問い合わせ');
+INSERT INTO questions VALUES(seq_questions.NEXTVAL, 'メールアドレスの問い合わせ');
+
+-- コミット
+COMMIT;
